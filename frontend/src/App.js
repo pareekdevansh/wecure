@@ -16,7 +16,7 @@ import {
 } from "./containers";
 function App() {
 	return (
-		<div>
+		<div className="gradient-bg">
 			<Header />
 			<Home />
 			<About />

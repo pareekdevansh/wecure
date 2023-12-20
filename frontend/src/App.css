@@ -6,6 +6,30 @@
 	height: 40vmin;
 	pointer-events: none;
 }
+body {
+	background: linear-gradient(
+		315deg,
+		#f0f8ff 0%,
+		#d3e0ea 25%,
+		#a1bdd8 50%,
+		#7c9eb2 75%,
+		#536b78 100%
+	);
+}
+
+.card {
+	background-color: #ffffff; /* White background for the card */
+	border-radius: 10px; /* Optional: Add rounded corners for a softer look */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.footer-gradient {
+	background: radial-gradient(
+		circle at 24.1% 68.8%,
+		rgb(50, 50, 50) 0%,
+		rgb(0, 0, 0) 99.4%
+	);
+}
 
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
