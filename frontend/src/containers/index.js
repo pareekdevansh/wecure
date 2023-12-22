@@ -1,4 +1,5 @@
 export { default as Testimonials } from "./testimonials/Testimonials";
+export { default as Blogs } from "./blogs/Blogs";
 export { default as Team } from "./team/Team";
 export { default as ContactUs } from "./contact-us/ContactUs";
 export { default as Profile } from "./profile/Profile";

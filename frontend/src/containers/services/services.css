@@ -1,0 +1,39 @@
+.services {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(5, 1fr);
+	padding: 20px;
+}
+
+.service-card {
+	padding: 10px;
+	height: auto;
+	display: flex;
+	gap: 10px;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.service-image {
+	display: flex;
+}
+
+.service-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+	align-items: center;
+}
+@media screen and (max-width: 1050px) {
+	.service-card {
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	.services {
+		grid-template-columns: 1fr;
+	}
+}

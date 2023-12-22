@@ -1,3 +1,24 @@
+:root {
+	--gradient-black-bg: radial-gradient(
+		circle at 24.1% 68.8%,
+		rgb(50, 50, 50) 0%,
+		rgb(0, 0, 0) 99.4%
+	);
+	--gradient-bg : radial-gradient(
+		ellipse at bottom left,
+		rgba(33, 188, 220, 0.6) 40%,
+		rgba(33, 188, 220, 0.5) 50%,
+		rgba(33, 188, 220, 0.4) 60%
+	);
+	--footer-gradient-bg: background: radial-gradient(
+		circle at 24.1% 68.8%,
+		rgb(50, 50, 50) 0%,
+		rgb(0, 0, 0) 99.4%
+	);
+	--button-bg: #ff4820;
+	--button-success-bg: #3a86ff;
+	-button-fail-bg: #9d0208;
+}
 .App {
 	text-align: center;
 }
@@ -6,31 +27,10 @@
 	height: 40vmin;
 	pointer-events: none;
 }
-body {
-	background: linear-gradient(
-		315deg,
-		#f0f8ff 0%,
-		#d3e0ea 25%,
-		#a1bdd8 50%,
-		#7c9eb2 75%,
-		#536b78 100%
-	);
-}
 
-.card {
-	background-color: #ffffff; /* White background for the card */
-	border-radius: 10px; /* Optional: Add rounded corners for a softer look */
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+body{
+	background: var(--gradient-bg);
 }
-
-.footer-gradient {
-	background: radial-gradient(
-		circle at 24.1% 68.8%,
-		rgb(50, 50, 50) 0%,
-		rgb(0, 0, 0) 99.4%
-	);
-}
-
 @media (prefers-reduced-motion: no-preference) {
 	.App-logo {
 		animation: App-logo-spin infinite 20s linear;
@@ -61,17 +61,15 @@ body {
 	}
 }
 
-gradient-background {
-	background-image: linear-gradient(
-		0deg,
-		hsl(240deg 86% 28%) 0%,
-		hsl(289deg 100% 26%) 39%,
-		hsl(315deg 100% 31%) 51%,
-		hsl(328deg 100% 39%) 61%,
-		hsl(339deg 90% 47%) 75%,
-		hsl(0deg 91% 62%) 100%
+/* .gradient-bg {
+	 background: rgb(234, 80, 96); 
+	background: radial-gradient(
+		ellipse at bottom left,
+		rgba(33, 188, 220, 0.6) 40%,
+		rgba(33, 188, 220, 0.5) 50%,
+		rgba(33, 188, 220, 0.4) 60%
 	);
-}
+} */
 
 * {
 	margin: 0;

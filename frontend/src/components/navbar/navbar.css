@@ -23,7 +23,7 @@
 
 .navbar {
 	border-bottom: 1px solid #536b78;
-
+	position: static;
 	padding: 1rem 0.5rem;
 	display: flex;
 	justify-content: space-between;
@@ -51,14 +51,14 @@
 	align-items: center;
 }
 
-.navbar-sign {
+.navbar-user {
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
 }
 
 .navbar-links-container p,
-.navbar-sign p,
+.navbar-user p,
 .navbar-menu-container p {
 	font-weight: 400;
 	font-size: 18px;
@@ -69,22 +69,33 @@
 	cursor: pointer;
 }
 
-.navbar-sign button,
-.navbar-menu-container button {
+.navbar-user button,
+.navbar-menu-container button,
+navbar-user-profile-menu-container button {
 	padding: 0.5rem 1rem;
 	width: 160;
 	height: 50px;
 	color: #fff;
 	font-size: 16px;
-	background: #ff4820;
+	background: var(--button-bg);
 	font-weight: 400;
 	border-radius: 5px;
 	border: 0;
 	outline: none;
 	cursor: pointer;
 }
-
-.navbar-menu {
+.navbar-user-guest {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: row;
+}
+.navbar-user-profile {
+	margin-right: 0.5rem;
+	cursor: pointer;
+}
+.navbar-menu,
+.navbar-user-profile-menu {
 	/* display: none; */
 	position: relative;
 	margin-left: 1rem;
@@ -94,7 +105,8 @@
 	cursor: pointer;
 }
 
-.navbar-menu-container {
+.navbar-menu-container,
+.navbar-user-profile-menu-container {
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
@@ -111,7 +123,7 @@
 	top: 40px;
 	right: 0px;
 	border-radius: 8px;
-	min-width: 200px;
+	min-width: 270px;
 	box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);
 }
 
@@ -141,7 +153,7 @@
 	.navbar {
 		padding: 2rem;
 	}
-	.navbar-sign {
+	.navbar-user-guest {
 		display: none;
 	}
 	.navbar-menu-container {

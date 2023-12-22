@@ -2,6 +2,7 @@ import React from "react";
 import "./navbar.css";
 import { useState } from "react";
 import { RiCloseLine, RiMenu3Line } from "react-icons/ri";
+import { CgProfile } from "react-icons/cg";
 const Menu = () => {
 	return (
 		<>
@@ -9,10 +10,13 @@ const Menu = () => {
 				<a href="/about">About</a>
 			</p>
 			<p>
-				<a href="/contact">Contact</a>
+				<a href="/contact-us">Contact</a>
 			</p>
 			<p>
 				<a href="/services">Services</a>
+			</p>
+			<p>
+				<a href="/book-an-appointment">Book An Appointment</a>
 			</p>
 			<p>
 				<a href="/team">Team</a>
@@ -23,21 +27,65 @@ const Menu = () => {
 		</>
 	);
 };
-
+const UserProfileMenu = () => {
+	return (
+		<>
+			<p>
+				<a href="/profile/:userId">Profile</a>
+			</p>
+			<p>
+				<a href="/appointments/:userId">Recent Appointments</a>
+			</p>
+			<button type="button">Log Out</button>
+		</>
+	);
+};
 function Navbar() {
-	const [activeMenu, setActiveMenu] = useState(true);
+	const [activeMenu, setActiveMenu] = useState(false);
+	const [activeUserProfileMenu, setActiveUserProfileMenu] = useState(false);
+	const [isLoggedIn, setIsLoggedIn] = useState(true);
 	return (
 		<div className="navbar navbar-gradient_bg">
 			<div className="navbar-links">
-				<div className="navbar-links-logo">WeCure</div>
+				<div className="navbar-links-logo">
+					<p>
+						<a href="/">WeCure</a>
+					</p>
+				</div>
 				<div className="navbar-links-container">
 					<Menu />
 				</div>
 			</div>
-			<div className="navbar-sign">
-				<p>Sign in</p>
-				<button type="button">Sign up</button>
+			<div className="navbar-user">
+				{isLoggedIn ? (
+					<div className="navbar-user-profile-menu">
+						{activeUserProfileMenu ? (
+							<RiCloseLine
+								color="#fff"
+								size={27}
+								onClick={() => setActiveUserProfileMenu(false)}
+							/>
+						) : (
+							<CgProfile
+								color="#fff"
+								size={27}
+								onClick={() => setActiveUserProfileMenu(true)}
+							/>
+						)}
+						{activeUserProfileMenu ? (
+							<div className="navbar-user-profile-menu-container">
+								<UserProfileMenu />
+							</div>
+						) : null}
+					</div>
+				) : (
+					<div className="navbar-user-guest">
+						<p>Sign in</p>
+						<button type="button">Sign up</button>
+					</div>
+				)}
 			</div>
+
 			<div className="navbar-menu">
 				{activeMenu ? (
 					<RiCloseLine
@@ -56,10 +104,12 @@ function Navbar() {
 					<div className="navbar-menu-container scale-up-center">
 						<div className="navbar-menu-container-links">
 							<Menu />
-							<div className="navbar-menu-container-links-sign">
-								<p>Sign in</p>
-								<button type="button">Sign up</button>
-							</div>
+							{!isLoggedIn && (
+								<div className="navbar-menu-container-links-sign">
+									<p>Sign in</p>
+									<button type="button">Sign up</button>
+								</div>
+							)}
 						</div>
 					</div>
 				)}
