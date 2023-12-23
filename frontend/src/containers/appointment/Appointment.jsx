@@ -29,7 +29,7 @@ function Appointment() {
 	const [isTimeSlotsModalOpen, setIsTimeSlotsModalOpen] = useState(false);
 	return (
 		<div className="appointment-section">
-			<div className="appointment-card">
+			<div className="appointment-card card">
 				<div className="appointment-fields ">
 					<input
 						type="text"

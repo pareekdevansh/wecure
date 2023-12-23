@@ -80,7 +80,7 @@ function Services() {
 	return (
 		<div className="services">
 			{services.map((service) => (
-				<div className="service-card">
+				<div className="service-card card">
 					<div className="service-image">
 						<img
 							src={service.image}

@@ -4,21 +4,51 @@
 		rgb(50, 50, 50) 0%,
 		rgb(0, 0, 0) 99.4%
 	);
-	--gradient-bg : radial-gradient(
-		ellipse at bottom left,
-		rgba(33, 188, 220, 0.6) 40%,
-		rgba(33, 188, 220, 0.5) 50%,
-		rgba(33, 188, 220, 0.4) 60%
+	--navbar-gradient-bg: linear-gradient(
+		90deg,
+		hsl(177deg 84% 31%) 3%,
+		hsl(183deg 38% 43%) 55%,
+		hsl(194deg 27% 52%) 70%,
+		hsl(211deg 27% 60%) 79%,
+		hsl(235deg 27% 67%) 85%,
+		hsl(260deg 37% 71%) 91%,
+		hsl(275deg 51% 74%) 95%,
+		hsl(285, 51%, 54%) 100%
 	);
-	--footer-gradient-bg: background: radial-gradient(
+
+	--card-gradient-bg: linear-gradient(147deg, #3eadcf 0%, #abe9cd 74%);
+
+	--gradient-bg: radial-gradient(
+		circle at right bottom,
+		#8ad568 0%,
+		#3eb687 100%
+	);
+
+	--footer-gradient-bg: radial-gradient(
 		circle at 24.1% 68.8%,
 		rgb(50, 50, 50) 0%,
 		rgb(0, 0, 0) 99.4%
 	);
+
 	--button-bg: #ff4820;
 	--button-success-bg: #3a86ff;
 	-button-fail-bg: #9d0208;
 }
+
+.card {
+	background: var(--card-gradient-bg);
+	border: 2px solid black;
+	border-radius: 10px;
+	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+	padding: 8px;
+	transition: transform 0.3s ease-in-out;
+	gap: 10px;
+}
+
+/* .card:hover {
+	transform: scale(1.05);
+} */
+
 .App {
 	text-align: center;
 }
@@ -28,7 +58,7 @@
 	pointer-events: none;
 }
 
-body{
+body {
 	background: var(--gradient-bg);
 }
 @media (prefers-reduced-motion: no-preference) {
