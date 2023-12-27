@@ -6,7 +6,7 @@ const testimonialsList = [
 	{
 		testimonialSampleUrls: [
 			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKbNoLb-0P6lZXYZVXt0rEWoeC-WrRzuxpFbnslzsE7Xj7yXqhXm7kX-vDB-VyeAx6eO4&usqp=CAU",
-			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKbNoLb-0P6lZXYZVXt0rEWoeC-WrRzuxpFbnslzsE7Xj7yXqhXm7kX-vDB-VyeAx6eO4&usqp=CAU",
+			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPe9OkMA8ClwUsD5liieH9-Uc26E-F3oqKWhIzXxzs3LDTFXhpGrk-hynYDx-jRWPE7P0&usqp=CAU",
 			"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKbNoLb-0P6lZXYZVXt0rEWoeC-WrRzuxpFbnslzsE7Xj7yXqhXm7kX-vDB-VyeAx6eO4&usqp=CAU",
 		],
 		treatmentName: "Acne Treatment",
@@ -84,7 +84,9 @@ function Testimonials() {
 			<div className="testimonials-grid">
 				{testimonialsList.map((testimonial) => (
 					<div className="testimonial-item card">
-						<SampleCarousel urlsList={testimonial.testimonialSampleUrls} />
+						<div className="testimonial-sample-carousel">
+							<SampleCarousel urlsList={testimonial.testimonialSampleUrls} />
+						</div>
 						<div className="testimonial-descreption">
 							<h4>{testimonial.treatmentName}</h4>
 							<p>{testimonial.patientFeedback}</p>

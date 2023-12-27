@@ -32,7 +32,7 @@
 
 	--button-bg: #ff4820;
 	--button-success-bg: #3a86ff;
-	-button-fail-bg: #9d0208;
+	--button-fail-bg: #9d0208;
 }
 
 .card {
@@ -40,14 +40,10 @@
 	border: 2px solid black;
 	border-radius: 10px;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-	padding: 8px;
+	padding: 0.5rem;
 	transition: transform 0.3s ease-in-out;
 	gap: 10px;
 }
-
-/* .card:hover {
-	transform: scale(1.05);
-} */
 
 .App {
 	text-align: center;
@@ -90,16 +86,6 @@ body {
 		transform: rotate(360deg);
 	}
 }
-
-/* .gradient-bg {
-	 background: rgb(234, 80, 96); 
-	background: radial-gradient(
-		ellipse at bottom left,
-		rgba(33, 188, 220, 0.6) 40%,
-		rgba(33, 188, 220, 0.5) 50%,
-		rgba(33, 188, 220, 0.4) 60%
-	);
-} */
 
 * {
 	margin: 0;

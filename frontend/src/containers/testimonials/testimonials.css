@@ -8,8 +8,8 @@
 .testimonials-grid {
 	padding: 1rem 2rem;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 10px;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	gap: 2rem;
 	justify-content: center;
 	align-items: center;
 }
@@ -22,9 +22,13 @@
 	justify-content: center;
 	align-items: center;
 }
+.testimonial-sample-carousel {
+	height: 400px;
+	width: 400px;
+}
 .testimonial-descreption {
 	display: flex;
-	width: 500px;
+	max-width: 400px;
 	flex-direction: column;
 	padding: 0rem 0.5rem;
 	justify-content: center;
@@ -32,9 +36,4 @@
 }
 .testimonial-descreption button {
 	align-self: flex-end;
-}
-@media screen and (max-width: 1050px) {
-	.testimonials-grid {
-		grid-template-columns: 1fr;
-	}
 }

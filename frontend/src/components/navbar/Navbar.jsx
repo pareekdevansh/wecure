@@ -43,7 +43,7 @@ const UserProfileMenu = () => {
 function Navbar() {
 	const [activeMenu, setActiveMenu] = useState(false);
 	const [activeUserProfileMenu, setActiveUserProfileMenu] = useState(false);
-	const [isLoggedIn, setIsLoggedIn] = useState(true);
+	const [isLoggedIn, setIsLoggedIn] = useState(false);
 	return (
 		<div className="navbar navbar-gradient_bg">
 			<div className="navbar-links">

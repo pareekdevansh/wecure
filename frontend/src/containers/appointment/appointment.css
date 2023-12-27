@@ -1,18 +1,9 @@
-/* .appointment-section-wrapper {
-	/* width: 100vw; */
-/* min-height: 100vh; */
-/* background: var(--gradient-bg); */
-/* display: flex; */
-/* justify-content: center;
-	align-items: center; 
-} */
 .appointment-section {
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	align-items: center;
 	min-height: 80vh;
-	/* background: var(--gradient-black-bg); */
 }
 
 .appointment-card {

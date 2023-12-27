@@ -1,8 +1,9 @@
 import React from "react";
 import "./sample-carousel.css";
+import { useEffect } from "react";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
-function SampleCarousel({ urlsList }) {
+function SampleCarousel({ urlsList, timer = -1 }) {
 	const [activeIndex, setActiveIndex] = React.useState(0);
 
 	function incrementIndex() {
@@ -14,6 +15,17 @@ function SampleCarousel({ urlsList }) {
 			(activeIndex) => (activeIndex - 1 + urlsList.length) % urlsList.length
 		);
 	}
+
+	useEffect(() => {
+		// Set up automatic slide change every 5 seconds
+		if (timer === -1) return;
+		const intervalId = setInterval(() => {
+			incrementIndex();
+		}, timer * 1000);
+
+		// Clear the interval when the component is unmounted or when the URLs list changes
+		return () => clearInterval(intervalId);
+	}, [urlsList]);
 
 	return (
 		<div className="carousel-container">

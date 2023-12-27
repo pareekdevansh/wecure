@@ -9,5 +9,4 @@ export { default as About } from "./about/About";
 export { default as Services } from "./services/Services";
 export { default as Appointment } from "./appointment/Appointment";
 export { default as Login } from "./login/Login";
-export { default as Header } from "./header/Header";
 export { default as Footer } from "./footer/Footer";

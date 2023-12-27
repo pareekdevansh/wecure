@@ -1,13 +1,11 @@
 import "./App.css";
-import { Link, Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
 import {
-	Header,
 	Footer,
 	Testimonials,
 	Blogs,
 	Team,
 	ContactUs,
-	Profile,
 	Register,
 	Home,
 	About,
@@ -18,7 +16,7 @@ import {
 import Navbar from "./components/navbar/Navbar";
 function App() {
 	return (
-		<div>
+		<div className="app">
 			<Navbar />
 			<BrowserRouter>
 				<Routes>
@@ -26,7 +24,10 @@ function App() {
 						path="/"
 						element={<Home />}
 					/>
-
+					<Route
+						path="/home"
+						element={<Home />}
+					/>
 					<Route
 						path="/login"
 						element={<Login />}
@@ -55,12 +56,10 @@ function App() {
 						path="/team"
 						element={<Team />}
 					/>
-
 					<Route
 						path="/blogs"
 						element={<Blogs />}
 					/>
-
 					<Route
 						path="/contact-us"
 						element={<ContactUs />}

@@ -11,7 +11,6 @@
 .navbar {
 	border-bottom: 1px solid #536b78;
 	background: var(--navbar-gradient-bg);
-	position: sticky;
 	padding: 1rem 0.5rem;
 	display: flex;
 	justify-content: space-between;
@@ -109,8 +108,10 @@ navbar-user-profile-menu-container button {
 	);
 	padding: 2rem;
 	position: absolute;
+	z-index: 100;
 	top: 40px;
 	right: 0px;
+	z-index: 5;
 	border-radius: 8px;
 	min-width: 270px;
 	box-shadow: 0 0 5 rgba(0, 0, 0, 0.2);

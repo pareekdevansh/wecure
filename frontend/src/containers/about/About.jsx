@@ -8,10 +8,11 @@ function About() {
 				Welcome to WeCure - Your Trusted Partner in Dermatology
 			</h2>
 			<p>
-				Care! At WeCure, we take immense pride in being a leading dermatology
-				hospital dedicated to delivering exceptional healthcare services in
-				India.Our commitment is rooted in the core belief that every individual
-				deserves the highest quality of care for their skin health. Our Promise:
+				At WeCure, we take immense pride in being a leading dermatology hospital
+				dedicated to delivering exceptional healthcare services in India. Our
+				Motto is "We Cure because We Care". Our commitment is rooted in the core
+				belief that every individual deserves the highest quality of care for
+				their skin health. Our Promise:
 			</p>
 			<ol>
 				<li>
