@@ -29,8 +29,10 @@ function Appointment() {
 	const [isTimeSlotsModalOpen, setIsTimeSlotsModalOpen] = useState(false);
 	return (
 		<div className="appointment-section">
-			<div className="appointment-card card">
-				<div className="appointment-fields ">
+			<div className="appointment-container card">
+				<h1>Book An Appointment</h1>
+				<h5>Fill The Following Details</h5>
+				<div className="appointment-fields">
 					<input
 						type="text"
 						placeholder="Name"
@@ -53,13 +55,13 @@ function Appointment() {
 						optionsList={doctorsList}
 					/>
 
-					<label for="datetime">Select Date and Time-slot:</label>
+					<label for="datetime">Select Date :</label>
 					<input
 						type="date"
 						id="date"
 						name="date"
 						min="2024-01-01"
-						max="2024-12-31"
+						max="2024-02-29"
 					></input>
 				</div>
 				<div className="appointment-buttons">

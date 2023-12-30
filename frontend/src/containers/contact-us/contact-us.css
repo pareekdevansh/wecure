@@ -19,8 +19,8 @@
 
 .map-location {
 	display: flex;
-	width: 500px;
-	height: 500px;
+	max-width: 400px;
+	height: 400px;
 }
 .map-location img {
 	cursor: pointer;
@@ -30,10 +30,11 @@
 	object-fit: cover;
 }
 .contact-descreption {
-	max-width: 500px;
+	max-width: 400px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	padding: 0.5rem 1rem;
 	gap: 10px;
 	align-items: flex-start;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "./time_slots_modal.css";
-import { RiCloseLine } from "react-icons/ri";
+import { Ri24HoursLine, RiCloseLine } from "react-icons/ri";
 const TimeSlotsModal = ({ startTime, endTime, onClose }) => {
 	const rows = 2;
 	const columns = 2;
@@ -16,17 +16,17 @@ const TimeSlotsModal = ({ startTime, endTime, onClose }) => {
 					/>
 				</div>
 				<div className="time-slots-grid">
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
-					<p>Devansh </p>
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
+					<Ri24HoursLine />
 					{/* {Array(rows)
 						.fill()
 						.map((_, i) => (

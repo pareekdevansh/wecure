@@ -1,12 +1,11 @@
 .login {
-	min-height: 70vh;
-
+	min-height: 80vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 .login-container {
-	width: 420px;
+	max-width: 420px;
 	padding: 1rem;
 	display: flex;
 	flex-direction: column;
@@ -41,7 +40,7 @@ h5 {
 .input-box::placeholder {
 	color: #fff;
 }
-a:hover {
+.nav-link :hover {
 	text-decoration: underline;
 }
 .icon {

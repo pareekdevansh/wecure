@@ -23,8 +23,8 @@
 
 .doctor-image {
 	display: flex;
-	width: 300px;
-	height: 300px;
+	width: 275px;
+	height: 275px;
 }
 
 .doctor-image img {
@@ -48,5 +48,10 @@
 	}
 	.doctor-card {
 		flex-direction: row;
+	}
+}
+@media screen and (max-width: 550px) {
+	.doctor-card {
+		flex-direction: column;
 	}
 }

@@ -5,8 +5,9 @@
 	justify-content: center;
 	align-items: center;
 	border-radius: 10px;
-	width: fit-content;
-	height: fit-content;
+	width: auto;
+	height: auto;
+	
 }
 .time-slots-modal-close-icon {
 	margin: 10px;
@@ -16,6 +17,7 @@
 
 .time-slots-grid {
 	display: grid;
-	grid-template-columns: repeat(7, 5fr);
+	grid-template-columns: repeat(3, 1fr);
 	margin: 10px;
+	gap: 1rem;
 }

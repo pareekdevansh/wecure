@@ -56,8 +56,14 @@ function Register() {
 					text={"Sign Up"}
 					onClick={() => {}}
 				/>
-				<p >
-					Already have an Account? <a href="/register">SignIn</a>
+				<p>
+					Already have an Account?{" "}
+					<a
+						className="nav-link"
+						href="/login"
+					>
+						SignIn
+					</a>
 				</p>
 			</form>
 		</div>

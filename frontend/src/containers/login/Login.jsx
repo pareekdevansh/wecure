@@ -32,14 +32,25 @@ function Login() {
 					<label>
 						<input type="checkbox" /> Remember me
 					</label>
-					<a href="/forgot-password">Forget Password</a>
+					<a
+						className="nav-link"
+						href="/forgot-password"
+					>
+						Forget Password
+					</a>
 				</div>
 				<Button
 					text={"Sign In"}
 					onClick={() => {}}
 				/>
 				<p>
-					Don't have an Account? <a href="/signup">Register</a>
+					Don't have an Account?{" "}
+					<a
+						className="nav-link"
+						href="/register"
+					>
+						Register
+					</a>
 				</p>
 			</form>
 			{/* </div> */}

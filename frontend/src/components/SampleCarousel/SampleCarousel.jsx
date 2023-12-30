@@ -38,7 +38,7 @@ function SampleCarousel({ urlsList, timer = -1 }) {
 				src={urlsList[activeIndex]}
 				alt={`customer image ${activeIndex + 1}`}
 			/>
-			<p className="carousel-index">{activeIndex}</p>
+			{/* <p className="carousel-index">{activeIndex}</p> */}
 			<FaAngleRight
 				className="carousel-icon"
 				style={{ right: ".5rem" }}
