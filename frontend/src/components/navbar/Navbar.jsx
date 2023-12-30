@@ -80,8 +80,21 @@ function Navbar() {
 					</div>
 				) : (
 					<div className="navbar-user-guest">
-						<p>Sign in</p>
-						<button type="button">Sign up</button>
+						<p
+							onClick={() => {
+								window.location.replace("/login");
+							}}
+						>
+							Sign in
+						</p>
+						<button
+							type="button"
+							onClick={() => {
+								window.location.replace("/register");
+							}}
+						>
+							Sign up
+						</button>
 					</div>
 				)}
 			</div>
@@ -106,8 +119,21 @@ function Navbar() {
 							<Menu />
 							{!isLoggedIn && (
 								<div className="navbar-menu-container-links-sign">
-									<p>Sign in</p>
-									<button type="button">Sign up</button>
+									<p
+										onClick={() => {
+											window.location.replace("/login");
+										}}
+									>
+										Sign in
+									</p>
+									<button
+										type="button"
+										onClick={() => {
+											window.location.replace("/register");
+										}}
+									>
+										Sign up
+									</button>
 								</div>
 							)}
 						</div>

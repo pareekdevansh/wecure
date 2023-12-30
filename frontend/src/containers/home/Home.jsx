@@ -186,7 +186,9 @@ function Home() {
 						<span>
 							<button
 								className="button-link"
-								onClick={() => {}}
+								onClick={() => {
+									window.location.href = "/testimonials";
+								}}
 							>
 								Testimonials
 							</button>
@@ -200,7 +202,9 @@ function Home() {
 						<span>
 							<button
 								className="button-link"
-								onClick={() => {}}
+								onClick={() => {
+									window.location.href = "/about";
+								}}
 							>
 								About
 							</button>
@@ -214,7 +218,9 @@ function Home() {
 						<span>
 							<button
 								className="button-link"
-								onClick={() => {}}
+								onClick={() => {
+									window.location.href = "/contact-us";
+								}}
 							>
 								Contact-Us
 							</button>
@@ -225,7 +231,9 @@ function Home() {
 				<div className="fab-button">
 					<Button
 						text={"Book An Appointment"}
-						onClick={() => {}}
+						onClick={() => {
+							window.location.href = "/book-an-appointment";
+						}}
 						style={{ padding: "10px" }}
 					/>
 				</div>

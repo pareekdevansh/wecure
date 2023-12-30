@@ -12,6 +12,8 @@ import {
 	Services,
 	Appointment,
 	Login,
+	ForgotPassword,
+	ResetPassword
 } from "./containers";
 import Navbar from "./components/navbar/Navbar";
 function App() {
@@ -35,6 +37,14 @@ function App() {
 					<Route
 						path="/register"
 						element={<Register />}
+					/>
+					<Route
+						path="/forgot-password"
+						element={<ForgotPassword />}
+					/>
+					<Route
+						path="/reset-password"
+						element={<ResetPassword />}
 					/>
 					<Route
 						path="/book-an-appointment"
